@@ -1,1 +1,17 @@
+body{
+  background-color: black;
+  perspective-origin: 51% -15%;/*inclinaison de la perspetive*/
+  perspective: 639px;/*Creer la perspecrive tjrs dans le contenaire*/
+}
+.main{
+  color:yellow;
+  margin: auto;
+  width: 70%;
+  width: 70%;
+  transform: rotateX( 45deg ) translateY(-11%);
+  /* rotate=incline transalte=fait défiler
+  TODO: transition
 
+    */
+  font-size: 22px;
+}
