@@ -1,17 +1,28 @@
 body{
   background-color: black;
-  perspective-origin: 51% -15%;/*inclinaison de la perspetive*/
-  perspective: 639px;/*Creer la perspecrive tjrs dans le contenaire*/
+  perspective-origin: 50% -35%;/*inclinaison de la perspetive*/
+  perspective: 550px;/*Creer la perspecrive tjrs dans le contenaire*/
+  overflow: hidden;
+}
+@keyframes starwars {
+  from{
+    transform: rotateX( 30deg ) translateY(25%);
+  }
+  to{
+    transform: rotateX( 30deg ) translateY(-80%);
+  }
 }
 .main{
   color:yellow;
   margin: auto;
   width: 70%;
   width: 70%;
-  transform: rotateX( 45deg ) translateY(-11%);
-  /* rotate=incline transalte=fait défiler
-  TODO: transition
+  transform: rotateX( 30deg ) translateY(0%);
+  font-size: 29px;
+  font-family: fantasy;
+  line-height: 50px;
+  animation-name: starwars;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
 
-    */
-  font-size: 22px;
 }
